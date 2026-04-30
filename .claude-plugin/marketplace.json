@@ -1,0 +1,17 @@
+{
+  "name": "research-lite-marketplace",
+  "owner": {
+    "name": "HYUNSUK2",
+    "email": "ohs11244@naver.com"
+  },
+  "metadata": {
+    "description": "Lightweight deep research + consulting analysis plugin"
+  },
+  "plugins": [
+    {
+      "name": "research-lite",
+      "source": "./",
+      "description": "Multi-angle deep research and consulting framework analysis (/research, /analyze)"
+    }
+  ]
+}

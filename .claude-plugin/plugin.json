@@ -1,0 +1,13 @@
+{
+  "name": "research-lite",
+  "description": "Multi-angle deep research and consulting framework analysis pipeline (/research, /analyze) — uses parallel web-researcher agents and a report-writer for synthesis.",
+  "version": "0.1.0",
+  "author": {
+    "name": "HYUNSUK2",
+    "email": "ohs11244@naver.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/HYUNSUK2/snake-flow",
+  "repository": "https://github.com/HYUNSUK2/snake-flow",
+  "keywords": ["research", "deep-research", "consulting", "analysis", "multi-agent"]
+}
