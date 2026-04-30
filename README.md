@@ -1,11 +1,11 @@
-# research-lite
+# snakeflow
 
 멀티앵글 딥 리서치 + 컨설팅 프레임워크 분석 파이프라인.
-두 개의 슬래시 커맨드(`/research`, `/analyze`)와 그에 필요한 스킬·에이전트로 구성된 경량 플러그인.
+두 개의 슬래시 커맨드(`/snakeflow:research`, `/snakeflow:analyze`)와 그에 필요한 스킬·에이전트로 구성된 경량 플러그인.
 
 Multi-angle deep research and consulting framework analysis pipeline — a lightweight
-plugin packaging two slash commands (`/research`, `/analyze`) with the skills and
-agents they need.
+plugin packaging two slash commands (`/snakeflow:research`, `/snakeflow:analyze`) with
+the skills and agents they need.
 
 ## Installation
 
@@ -14,32 +14,36 @@ agents they need.
 /plugin marketplace add HYUNSUK2/snake-flow
 
 # 2. Install the plugin
-/plugin install research-lite@research-lite-marketplace
+/plugin install snakeflow@research-lite-marketplace
+
+# 3. Reload the plugin (required after install or update)
+/reload-plugins
 ```
 
 로컬 클론으로 바로 테스트할 때:
 
 ```
 /plugin marketplace add /path/to/snake-flow
-/plugin install research-lite@research-lite-marketplace
+/plugin install snakeflow@research-lite-marketplace
+/reload-plugins
 ```
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `/research <topic>` | 주제에 대한 멀티앵글 딥 리서치. 3-5개 각도로 web-researcher를 병렬 디스패치 후 report-writer가 종합 리포트 생성. |
-| `/analyze <topic>` | 컨설팅 프레임워크(SWOT / PEST / Porter's / TAM-SAM-SOM 등) 기반 분석 리포트 생성. |
+| `/snakeflow:research <topic>` | 주제에 대한 멀티앵글 딥 리서치. 3-5개 각도로 web-researcher를 병렬 디스패치 후 report-writer가 종합 리포트 생성. |
+| `/snakeflow:analyze <analysis topic>` | 컨설팅 프레임워크(SWOT / PEST / Porter's / TAM-SAM-SOM 등) 기반 분석 리포트 생성. |
 
 결과물은 작업 디렉토리의 `.research/<topic-slug>/` 하위에 저장됩니다.
 
 ## Examples
 
 ```
-/research 2026 AI 에이전트 프레임워크 트렌드
-/research Rust vs Go backend performance
-/analyze 한국 전기차 시장 경쟁 구도
-/analyze Notion vs Obsidian 컨슈머 포지셔닝
+/snakeflow:research 2026 AI 에이전트 프레임워크 트렌드
+/snakeflow:research Rust vs Go backend performance
+/snakeflow:analyze 한국 전기차 시장 경쟁 구도
+/snakeflow:analyze Notion vs Obsidian 컨슈머 포지셔닝
 ```
 
 실행하면 다음과 같은 산출물이 생성됩니다:
@@ -67,8 +71,8 @@ agents they need.
 
 | Skill | Used By |
 |-------|---------|
-| `deep-research` | `/research` 의 파이프라인 (Plan → Dispatch → Validate → Synthesize → Save) |
-| `consulting-analysis` | `/analyze` 의 2단계 파이프라인 (Framework Design → Data Collection → Synthesis) |
+| `deep-research` | `/snakeflow:research` 의 파이프라인 (Plan → Dispatch → Validate → Synthesize → Save) |
+| `consulting-analysis` | `/snakeflow:analyze` 의 2단계 파이프라인 (Framework Design → Data Collection → Synthesis) |
 
 ## Agents
 
