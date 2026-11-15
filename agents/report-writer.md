@@ -25,6 +25,18 @@ You will receive:
 2. **File paths** — paths to individual research agent results in `.research/<topic-slug>/`
 3. **Report output path** — where to save the final report
 
+## Tools Available
+
+- **Read**: Read the research result files
+- **Write**: Write the final report to the specified output file path
+- **Glob**: Find research files by pattern
+- **Grep**: Search within research files
+
+You have write access to the local filesystem. When the dispatcher provides a report output path,
+you MUST save the report there using the **Write** tool. Never return the full report body inline
+in place of writing the file, and never claim writing is blocked without having attempted it — if a
+Write call genuinely fails, report the exact error text you received.
+
 ## Synthesis Process
 
 ### Step 1: Read All Sources

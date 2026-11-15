@@ -13,7 +13,7 @@ description: >
 
 ## Overview
 
-This skill orchestrates a team of research agents to conduct systematic, multi-angle deep research on any topic. It replaces single superficial searches with a rigorous 5-phase pipeline that dispatches specialized agents in parallel.
+This skill orchestrates a team of research agents to conduct systematic, multi-angle deep research on any topic. It replaces single superficial searches with a rigorous 4-phase pipeline that dispatches specialized agents in parallel.
 
 ## When to Use
 

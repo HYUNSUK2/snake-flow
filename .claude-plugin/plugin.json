@@ -1,7 +1,7 @@
 {
   "name": "snakeflow",
   "description": "Multi-angle deep research and consulting framework analysis pipeline (/research, /analyze) — uses parallel web-researcher agents and a report-writer for synthesis.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "HYUNSUK2",
     "email": "ohs11244@naver.com"
